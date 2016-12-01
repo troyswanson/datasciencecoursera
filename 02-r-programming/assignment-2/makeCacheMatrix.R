@@ -1,4 +1,6 @@
 makeCacheMatrix <- function(x) {
+  i <- NULL
+  
   set <- function(y) {
     x <<- y
     i <<- NULL
@@ -6,8 +8,6 @@ makeCacheMatrix <- function(x) {
   get <- function() x
   setInv <- function(y) i <<- y
   getInv <- function() i
-  
-  set(x)
   
   list(set = set,
        setInv = setInv,
