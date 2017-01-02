@@ -1,13 +1,92 @@
 # Code Book
 
-1. Load each of the data sets (test and train) and bind them to a single data frame. For each of the data sets, the following actions occur:
-  1. The list of features labels are loaded into a vector.
-  2. The feature data for the specified set is loaded as a fixed width file, with each feature representing 16 characters.
-  3. The labels for each activity are loaded into a data frame.
-  4. The activity data for the specified set is loaded in and converted to a factor vector with labels from the previous step.
-  5. The factor vector from the previous step is added to the feature data frame from step ii.
-  6. The final data frame is returned.
-2. Subset the data frame to only include columns containing "mean", "std", and "activity".
-3. Split the data frame into a list of data frames based on activity.
-4. Get the column averages for each item in the list.
-5. Create a data frame of the averages for tidiness.
+The data in `averages.txt` contains averages of all recorded observations aggragated across the subject and the activity. The following is a list of variable names found in the data:
+
+ 1. subject
+ 2. activity
+ 3. tBodyAcc.mean.X
+ 4. tBodyAcc.mean.Y
+ 5. tBodyAcc.mean.Z
+ 6. tBodyAcc.std.X
+ 7. tBodyAcc.std.Y
+ 8. tBodyAcc.std.Z
+ 9. tGravityAcc.mean.X
+10. tGravityAcc.mean.Y
+11. tGravityAcc.mean.Z
+12. tGravityAcc.std.X
+13. tGravityAcc.std.Y
+14. tGravityAcc.std.Z
+15. tBodyAccJerk.mean.X
+16. tBodyAccJerk.mean.Y
+17. tBodyAccJerk.mean.Z
+18. tBodyAccJerk.std.X
+19. tBodyAccJerk.std.Y
+20. tBodyAccJerk.std.Z
+21. tBodyGyro.mean.X
+22. tBodyGyro.mean.Y
+23. tBodyGyro.mean.Z
+24. tBodyGyro.std.X
+25. tBodyGyro.std.Y
+26. tBodyGyro.std.Z
+27. tBodyGyroJerk.mean.X
+28. tBodyGyroJerk.mean.Y
+29. tBodyGyroJerk.mean.Z
+30. tBodyGyroJerk.std.X
+31. tBodyGyroJerk.std.Y
+32. tBodyGyroJerk.std.Z
+33. tBodyAccMag.mean
+34. tBodyAccMag.std
+35. tGravityAccMag.mean
+36. tGravityAccMag.std
+37. tBodyAccJerkMag.mean
+38. tBodyAccJerkMag.std
+39. tBodyGyroMag.mean
+40. tBodyGyroMag.std
+41. tBodyGyroJerkMag.mean
+42. tBodyGyroJerkMag.std
+43. fBodyAcc.mean.X
+44. fBodyAcc.mean.Y
+45. fBodyAcc.mean.Z
+46. fBodyAcc.std.X
+47. fBodyAcc.std.Y
+48. fBodyAcc.std.Z
+49. fBodyAcc.meanFreq.X
+50. fBodyAcc.meanFreq.Y
+51. fBodyAcc.meanFreq.Z
+52. fBodyAccJerk.mean.X
+53. fBodyAccJerk.mean.Y
+54. fBodyAccJerk.mean.Z
+55. fBodyAccJerk.std.X
+56. fBodyAccJerk.std.Y
+57. fBodyAccJerk.std.Z
+58. fBodyAccJerk.meanFreq.X
+59. fBodyAccJerk.meanFreq.Y
+60. fBodyAccJerk.meanFreq.Z
+61. fBodyGyro.mean.X
+62. fBodyGyro.mean.Y
+63. fBodyGyro.mean.Z
+64. fBodyGyro.std.X
+65. fBodyGyro.std.Y
+66. fBodyGyro.std.Z
+67. fBodyGyro.meanFreq.X
+68. fBodyGyro.meanFreq.Y
+69. fBodyGyro.meanFreq.Z
+70. fBodyAccMag.mean
+71. fBodyAccMag.std
+72. fBodyAccMag.meanFreq
+73. fBodyAccJerkMag.mean
+74. fBodyAccJerkMag.std
+75. fBodyAccJerkMag.meanFreq
+76. fBodyGyroMag.mean
+77. fBodyGyroMag.std
+78. fBodyGyroMag.meanFreq
+79. fBodyGyroJerkMag.mean
+80. fBodyGyroJerkMag.std
+81. fBodyGyroJerkMag.meanFreq
+82. angletBodyAccMean.gravity
+83. angletBodyAccJerkMean.gravityMean
+84. angletBodyGyroMean.gravityMean
+85. angletBodyGyroJerkMean.gravityMean
+86. angleX.gravityMean
+87. angleY.gravityMean
+88. angleZ.gravityMean
