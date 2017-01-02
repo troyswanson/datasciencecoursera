@@ -2,15 +2,15 @@
 
 The data in `averages.txt` contains averages of all recorded observations aggragated across the subject and the activity. The following is a list of variable names found in the data:
 
- 1. subject
- 2. activity
- 3. tBodyAcc.mean.X
- 4. tBodyAcc.mean.Y
- 5. tBodyAcc.mean.Z
- 6. tBodyAcc.std.X
- 7. tBodyAcc.std.Y
- 8. tBodyAcc.std.Z
- 9. tGravityAcc.mean.X
+1. subject
+2. activity
+3. tBodyAcc.mean.X
+4. tBodyAcc.mean.Y
+5. tBodyAcc.mean.Z
+6. tBodyAcc.std.X
+7. tBodyAcc.std.Y
+8. tBodyAcc.std.Z
+9. tGravityAcc.mean.X
 10. tGravityAcc.mean.Y
 11. tGravityAcc.mean.Z
 12. tGravityAcc.std.X
