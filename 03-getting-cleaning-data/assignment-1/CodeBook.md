@@ -1,6 +1,8 @@
 # Code Book
 
-The data in `averages.txt` contains averages of all recorded observations aggragated across the subject and the activity. The following is a list of variable names found in the data:
+The data in `averages.txt` contains averages of all recorded observations aggregated across subject and activity.
+
+The following is a list of variable names found in the data:
 
 1. subject
 2. activity
